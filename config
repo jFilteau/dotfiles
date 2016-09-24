@@ -219,3 +219,4 @@ bindsym $mod+shift+u exec setxkbmap us
 gaps inner 10
 gaps outer 0
 smart_borders on
+smart_gaps on
