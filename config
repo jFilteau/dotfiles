@@ -191,15 +191,18 @@ bar {
 			urgent_workspace 	#d33682 	#d33682 	#fdf6e3
 		}
 }
+
 #						border		background	text		
-client.focused 			#6c71c4 	#246E6E 	#fdf6e3 
+client.focused 			#FDF6E3		#fdf6e3 	#fdf6e3 
 client.focused_inactive #073642 	#073642 	#eee8d5 
-client.unfocused 		#073642 	#073642 	#93a1a1 
-client.urgent #d33682 	#d33682 	#fdf6e3 	#dc322f
+client.unfocused 		#fdf6e3		#073642 	#93a1a1 
+client.urgent 		 	#d33682 	#fdf6e3 	#dc322f 
+
+new_window pixel
 
 # Application at startup
 exec --no-startup-id redshift-gtk
-exec_always feh --bg-center /home/justin/Downloads/Metro.jpg
+exec_always feh --bg-center /home/justin/Downloads/Mountain.png
 exec_always compton -f
 exec --no-startup-id nm-applet
 exec --no-startup-id xinput --set-prop 13 "Synaptics Two-Finger Scrolling" 1 1
@@ -216,7 +219,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym $mod+shift+f exec setxkbmap ca
 bindsym $mod+shift+u exec setxkbmap us
 
-gaps inner 10
+gaps inner 8
 gaps outer 0
 smart_borders on
 smart_gaps on
