@@ -104,6 +104,7 @@ set $workspace5 "5: Transmission"
 set $workspace6 "6: VLC"
 set $workspace7 "7: Gimp"
 set $workspace8 "8: PDF"
+set $workspace9 "9: Mail"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -114,7 +115,7 @@ bindsym $mod+5 workspace $workspace5
 bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
-bindsym $mod+9 workspace 9
+bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
@@ -126,7 +127,7 @@ bindsym $mod+Shift+5 move container to workspace $workspace5
 bindsym $mod+Shift+6 move container to workspace $workspace6
 bindsym $mod+Shift+7 move container to workspace $workspace7
 bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace 10
 
 assign [class="google-chrome"]  $workspace1
@@ -138,7 +139,7 @@ assign [class="Transmission-gtk"] $workspace5
 assign [class="vlc"] $workspace6
 assign [class="Gimp"] $workspace7
 assign [class="Atril"] $workspace8
-
+assign [class="Thunderbird"] $workspace9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
