@@ -97,7 +97,7 @@ bindsym $mod+a focus parent
 bindsym $mod+Tab workspace next
 
 set $workspace1 "1: Chrome"
-set $workspace2 "2: "
+set $workspace2 "2: >_"
 set $workspace3 "3: Editor"
 set $workspace4 "4: Music"
 set $workspace5 "5: Transmission"
