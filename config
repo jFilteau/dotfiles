@@ -140,6 +140,7 @@ assign [class="vlc"] $workspace6
 assign [class="Gimp"] $workspace7
 assign [class="Atril"] $workspace8
 assign [class="Thunderbird"] $workspace9
+assign [class="libreoffice-writer"] $workspace8
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
