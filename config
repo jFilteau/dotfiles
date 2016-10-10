@@ -96,15 +96,15 @@ bindsym $mod+a focus parent
 #change workspaces with tab
 bindsym $mod+Tab workspace next
 
-set $workspace1 "1: Chrome"
-set $workspace2 "2: >_"
-set $workspace3 "3: Editor"
-set $workspace4 "4: Music"
-set $workspace5 "5: Transmission"
-set $workspace6 "6: VLC"
-set $workspace7 "7: Gimp"
-set $workspace8 "8: PDF"
-set $workspace9 "9: Mail"
+set $workspace1 "1: &#xf268;"
+set $workspace2 "2: &#xf120;"
+set $workspace3 "3: &#xf040;"
+set $workspace4 "4: &#xf001;"
+set $workspace5 "5: &#xf019;"
+set $workspace6 "6: &#xf03d;"
+set $workspace7 "7: &#xf03e;"
+set $workspace8 "8: &#xf1c1;"
+set $workspace9 "9: &#xf01c;"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -180,7 +180,7 @@ bar {
         status_command i3blocks -c ~/.i3/i3blocks.config
 		position top
 		mode dock
-		font pango:System San Francisco Display 8
+		font pango:System San Francisco Display, FontAwesome 8
 		colors {
 #								border		background	text		
 			separator 			#268bd2
