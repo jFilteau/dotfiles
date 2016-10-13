@@ -130,7 +130,7 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace 10
 
-assign [class="google-chrome"]  $workspace1
+assign [class="Google-chrome"]  $workspace1
 assign [class="Terminator"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Sublime_text"] $workspace3
