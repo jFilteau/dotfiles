@@ -1,15 +1,24 @@
 #!/usr/bin/env python
-import psutil, subprocess, os
+import subprocess, os, sys
 
-process_name = 'cmus'
+proc = subprocess.Popen('cmus-remote -Q', stdout=subprocess.PIPE, shell=True)
+status = proc.stdout.read()
+proc_info = status.splitlines()
+try:
+	if proc_info[0].find('stopped') >= 0 or proc_info[0].find('paused') >= 0:
+		os.system('echo ' + proc_info[0]) 
+	else:
+		artist = proc_info[4][11:]
 
-for p in psutil.process_iter():
-	if p.name() == process_name:
-		p = subprocess.Popen('cmus-remote -Q', stdout=subprocess.PIPE, shell=True)
-		p_info = p.stdout.read().splitlines()
-		status = p_info[0][7:]
-		artist = p_info[4]
-		title = p_info[5]
-		song_info = artist[11:] + ' - ' + title[10:]
-		if status == 'playing':
-			os.system('echo ' + song_info)
+		if proc_info[5].find('album') >= 0:
+			album = proc_info[5][10:]
+			title = proc_info[6][10:]
+			song_info = artist + ' - ' + title + ' \(' + album + '\)'
+		else:
+			title = proc_info[5][10:]
+			song_info = artist + ' - ' + title
+	
+		os.system('echo ' + song_info)
+
+except IndexError:
+	os.system('echo')
