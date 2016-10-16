@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import subprocess, os, sys
+import subprocess, os
 
 proc = subprocess.Popen('cmus-remote -Q', stdout=subprocess.PIPE, shell=True)
 status = proc.stdout.read()

@@ -95,16 +95,16 @@ bindsym $mod+a focus parent
 
 #change workspaces with tab
 bindsym $mod+Tab workspace next
-
-set $workspace1 "1: &#xf268;"
-set $workspace2 "2: &#xf120;"
-set $workspace3 "3: &#xf040;"
-set $workspace4 "4: &#xf001;"
-set $workspace5 "5: &#xf019;"
-set $workspace6 "6: &#xf03d;"
-set $workspace7 "7: &#xf03e;"
-set $workspace8 "8: &#xf1c1;"
-set $workspace9 "9: &#xf01c;"
+ 
+set $workspace1 "1: &#xf268;" 
+set $workspace2 "2: &#xf120;" 
+set $workspace3 "3: &#xf040;" 
+set $workspace4 "4: &#xf001;" 
+set $workspace5 "5: &#xf019;" 
+set $workspace6 "6: &#xf03d;" 
+set $workspace7 "7: &#xf03e;" 
+set $workspace8 "8: &#xf1c1;" 
+set $workspace9 "9: &#xf01c;" 
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -140,7 +140,8 @@ assign [class="vlc"] $workspace6
 assign [class="Gimp"] $workspace7
 assign [class="Atril"] $workspace8
 assign [class="Thunderbird"] $workspace9
-assign [class="libreoffice-writer"] $workspace8
+assign [class="swriter"] $workspace8
+assign [class="RStudio"] $workspace3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -209,10 +210,10 @@ exec_always feh --bg-center /home/justin/Downloads/Metro.jpg
 exec_always compton -f
 exec --no-startup-id nm-applet
 exec --no-startup-id xinput --set-prop 13 "Synaptics Two-Finger Scrolling" 1 1
-exec --no-startup-id xautolock -time 15 -locker 'i3lock -i /home/justin/Downloads/Mountain.png'
+exec --no-startup-id xautolock -time 15 -locker 'i3lock -i /home/justin/Downloads/Ubuntu.png'
 
 #locking the screen
-bindsym $mod+shift+x exec i3lock -i /home/justin/Downloads/Mountain.png
+bindsym $mod+shift+x exec '/home/justin/.i3/scripts/lock.py'
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +3% #increase sound volume
