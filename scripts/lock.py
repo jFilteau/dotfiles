@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-import subprocess, os
+import subprocess
+import os
 
 proc = subprocess.Popen("xrandr | grep '*'", stdout=subprocess.PIPE, shell=True)
 res = proc.stdout.read().split()[0]
