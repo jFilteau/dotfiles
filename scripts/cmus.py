@@ -13,7 +13,7 @@ try:
         if proc_info[5].find('album') >= 0:
             album = proc_info[5][10:]
             title = proc_info[6][10:]
-            song_info = artist + ' - ' + title + ' \(' + album + '\)'
+            song_info = artist + ' - ' + title + ' (' + album + ')'
         else:
             title = proc_info[5][10:]
             song_info = artist + ' - ' + title

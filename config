@@ -102,7 +102,7 @@ set $workspace3 "3: &#xf040;"
 set $workspace4 "4: &#xf001;" 
 set $workspace5 "5: &#xf019;" 
 set $workspace6 "6: &#xf03d;" 
-set $workspace7 "7: &#xf03e;" 
+set $workspace7 "7: &#xf09a;" 
 set $workspace8 "8: &#xf1c1;" 
 set $workspace9 "9: &#xf01c;" 
 
@@ -134,15 +134,15 @@ assign [class="Google-chrome"]  $workspace1
 assign [class="Terminator"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Sublime_text"] $workspace3
+assign [class="RStudio"] $workspace3
+assign [class="Eclipse"] $workspace3
 assign [class="Rhythmbox"] $workspace4
 assign [class="Transmission-gtk"] $workspace5
 assign [class="vlc"] $workspace6
-assign [class="Gimp"] $workspace7
+assign [class="Messenger for Desktop"] $workspace7
 assign [class="Atril"] $workspace8
-assign [class="Thunderbird"] $workspace9
 assign [class="libreoffice-writer"] $workspace8
-assign [class="RStudio"] $workspace3
-assign [class="Eclipse"] $workspace3
+assign [class="Thunderbird"] $workspace9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
