@@ -98,15 +98,15 @@ bindsym $mod+a focus parent
 #change workspaces with tab
 bindsym $mod+Tab workspace next
  
-set $workspace1 "1: &#xf268;" 
-set $workspace2 "2: &#xf120;" 
-set $workspace3 "3: &#xf040;" 
-set $workspace4 "4: &#xf001;" 
-set $workspace5 "5: &#xf019;" 
-set $workspace6 "6: &#xf03d;" 
-set $workspace7 "7: &#xf09a;" 
-set $workspace8 "8: &#xf1c1;" 
-set $workspace9 "9: &#xf01c;" 
+set $workspace1 "1" 
+set $workspace2 "2" 
+set $workspace3 "3" 
+set $workspace4 "4"
+set $workspace5 "5" 
+set $workspace6 "6" 
+set $workspace7 "7" 
+set $workspace8 "8" 
+set $workspace9 "9" 
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -228,7 +228,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym $mod+shift+f exec setxkbmap ca
 bindsym $mod+shift+u exec setxkbmap us
 
-gaps inner 6
+gaps inner 4
 gaps outer 0
 smart_borders on
 smart_gaps on
